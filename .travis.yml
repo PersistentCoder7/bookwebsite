@@ -1,0 +1,13 @@
+language: bash
+install: bash install.sh
+script: bash script.sh
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: main
+env:
+  global:
+    secure: n+MueS/p4O9KJoOEUQVoNHsrex874FZvhgF4bl56XsfqNbqwIg7pEa7Ulwy2ltJa4dV3BieydkTIu3QMybKEvF0dwcP1PmU9VDnq5E8nR+BkFIo5wHyFu8Rg8Up/M4wX2XXVBj0Chn8rN7mPmSjpMDD+FwoB2iJrijdFo9JHxuwi6cQA3QspHj/MYPu8HH392Y6o6JDuBto/87LgkMDFPEaUQx11EaSu6yGF/eDKjDn34mCg+OsLUmRF2THJhW/T7DoJ0oQMDLiQBCTqdd8hRfR3exJRPrREPOa2DQ1ieZHFEYxyjLsYzIR0Jv5qSQIg2do/oraAIwx2SAjP+X+WJZX/csHB/x1+x8VagOruwE+nsOmiGTthegfhhbgLN7qAaYBeJRFMNcnwoPu+3ReKBaAKfsE+a7bmoCp7lqxES1IuPPbqcIR2228m/pJp7Q8PUMMtvl0q9LpW49NA7Z15cmJccHg+8ode5Fsp6pFstKJJYOE0fuZnxHCKHteuIvGX8eKQnfmSiOy3np6Htu3fo2Qere2YSD1NCYIwuei5TItOsIMFh5N4gb1rk/gahhvE2+5UbylBDnEU4DgEgazkM+Z/23REum8fi5pf9njvK2M92ClxTlpoiYED3RjSURHZYXLEUICUrNEbcvDnroz4I8U1Pw7y+dyDPbqk0D0MT5U=
